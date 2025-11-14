@@ -1,5 +1,9 @@
 module Overseer
+
 using MacroTools
+using Reexport 
+
+@reexport using ECSInterface
 
 """
 Abstract type for all [Components](@ref). For now the only two [`AbstractComponents`](@ref AbstractComponent) are [`Component`](@ref) and [`PooledComponent`](@ref).
