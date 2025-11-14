@@ -31,9 +31,7 @@ Abstract type for all ECS ledgers. The easiest way to use the interface is by in
 [`Ledger`](@ref) as a member field and defining [`ledger`](@ref) for your new [`AbstractLedger`](@ref)
 type to return that field. 
 """
-abstract type AbstractLedger end
-
-abstract type AbstractEntity end
+abstract type AbstractLedger <: AbstractECS end
 
 include("indices.jl")
 include("entity.jl")
