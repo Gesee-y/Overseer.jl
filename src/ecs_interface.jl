@@ -22,3 +22,5 @@ function ECSInterface.new_entities!(l::AbstractLedger, n, comps...)
         res[i] = Entity(l, comps...)
     end
 end
+
+ECSInterface.remove_entity!(l::AbstractLedger, e::Entity) = delete!(l, e)
