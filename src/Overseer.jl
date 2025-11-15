@@ -45,6 +45,7 @@ include("system.jl")
 include("ledger.jl")
 include("iteration.jl")
 include("interfaces.jl")
+include("ecs_interface.jl")
 
 export AbstractLedger, Ledger, System, Stage, Component, PooledComponent, Entity, entity, last_entity
 export @component, @pooled_component
